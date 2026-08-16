@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MariaMatch ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff4f81, #ff8fab);
+            min-height: 100vh;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 35px 20px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 17px;
+        }
+
+        .card {
+            background: white;
+            color: #333;
+            width: 90%;
+            max-width: 380px;
+            margin: 30px auto;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .foto {
+            height: 330px;
+            background: linear-gradient(135deg, #ffd1dc, #ff7096);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 90px;
+        }
+
+        .info {
+            padding: 22px;
+        }
+
+        .info h2 {
+            font-size: 27px;
+        }
+
+        .info p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 20px 25px;
+        }
+
+        button {
+            border: none;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .recusar {
+            background: #eee;
+        }
+
+        .curtir {
+            background: #ff3f78;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MariaMatch ❤️</h1>
+        <p>Encontre alguém especial.</p>
+    </header>
+
+    <div class="card">
+        <div class="foto">
+            👩🏻
+        </div>
+
+        <div class="info">
+            <h2>Maria, 22</h2>
+            <p>📍 São Paulo</p>
+            <p>Gosto de música, filmes e conhecer pessoas novas. ❤️</p>
+        </div>
+
+        <div class="botoes">
+            <button class="recusar" onclick="passar()">❌</button>
+            <button class="curtir" onclick="curtir()">❤️</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 MariaMatch
+    </footer>
+
+    <script>
+        function curtir() {
+            alert("❤️ Você curtiu o perfil!");
+        }
+
+        function passar() {
+            alert("Perfil passado!");
+        }
+    </script>
+
+</body>
+  </html>
